@@ -3,12 +3,18 @@ title: Repertoire
 layout: default
 ---
 
+<h1 class="text-center">Current Repertoire</h1>
+
+<p> The below table itemises the pieces currently available on this
+website. The pages will contain the interactive score, artefacts such
+as the PDFs, MP3 music and rehearsal notes wherever available.</p>
+
 <table class="table">
-  <thead><tr><th>Piece</th><th>Composer</th></tr></thead>
+  <thead><tr><th>Piece</th><th>Composer</th><th>Arranger</th></tr></thead>
   <tbody>
     {% for item in site.repertoire %}
     {% if item.title != "Repertoire" %}
-    <tr><td><a href="{{item.url}}">{{item.title}}</a></td><td>{{item.score.composer}}</td></tr>
+    <tr><td><a href="{{item.url}}">{{item.title}}</a></td><td>{{item.score.composer}}</td><td>{{item.score.arranger}}</td></tr>
     {% endif %}
     {% endfor %}
     </tbody>

@@ -41,7 +41,7 @@ sass:
 collections:
   repertoire:
     output: true
-    sort_by: id
+    sort_by: tag
   schedule:
     output: true
 
