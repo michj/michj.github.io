@@ -33,6 +33,14 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
 plugins:
   - jekyll-feed
+source: source
+timezone: Europe/London
+
+collections:
+  repertoire:
+    output: true
+  events:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,0 +1,24 @@
+---
+layout: default
+flat:
+  appId: 601d9d97547c546e1b25ba94
+---
+<h1 class="flat-title">{{page.title}}</h1>
+<div id="flat-embed-container"></div>
+<script src="https://prod.flat-cdn.com/embed-js/v1.5.1/embed.min.js"></script>
+<script>
+  var container = document.getElementById("flat-embed-container");
+  var embed = new Flat.Embed(container, {
+      "score": "{{page.flat.score}}",
+      "embedParams": {
+	  "locale": "en-GB",
+	  "appId": "{{layout.flat.appId}}",
+	  "sharingKey": "{{page.flat.sharingKey}}"
+      },
+  });
+  // You can now use the `embed` instance.
+  // Check out the docs at https://flat.io/developers/docs/embed/javascript.html
+</script>
+
+{{content}}
+
