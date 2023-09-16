@@ -10,6 +10,12 @@ flat:
   score: 65048f64360f2a089b7aba08
   sharingKey: de8c8e9abffb2768ac583618a678b218a1bac4f26030e92c3c8f5d965de01f19f3787bad8944f5f8aca1514d5428f06408d7596066ddeedcf740764ceb09e887
 artefacts:
-  pdf: /assert/pdf/joy-to-the-world.pdf
+  pdf: true
+  mp3_full: true
+  mp3_t1: true
+  mp3_t2: true
+  mp3_b1: true
+  mp3_b2: true
+  mp3_piano: false
 ---
 
