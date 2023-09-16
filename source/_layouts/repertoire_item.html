@@ -3,8 +3,18 @@ layout: default
 flat:
   appId: 601d9d97547c546e1b25ba94
 ---
-<h1 class="flat-title">{{page.title}}</h1>
+<h1>{{page.title}}</h1>
+<div class="container">
+  <div class="row">
+    <div class="col text-left"> {{score.lyricist}}</div>
+    <div class="col text-right"> {{score.composer}} <br/> {{score.arranger}} </div>
+  </div>
+</div>
+
+{% if page.flat %}
 <div id="flat-embed-container"></div>
+
+<!-- Scripts for Flat.io -->
 <script src="https://prod.flat-cdn.com/embed-js/v1.5.1/embed.min.js"></script>
 <script>
   var container = document.getElementById("flat-embed-container");
@@ -16,9 +26,10 @@ flat:
 	  "sharingKey": "{{page.flat.sharingKey}}"
       },
   });
-  // You can now use the `embed` instance.
-  // Check out the docs at https://flat.io/developers/docs/embed/javascript.html
 </script>
+{% else %}
+<blockquote>No Online Music Available</blockquote>
+{% endif %}
 
 {{content}}
 

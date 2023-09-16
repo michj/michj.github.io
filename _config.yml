@@ -36,9 +36,13 @@ plugins:
 source: source
 timezone: Europe/London
 
+sass:
+  sass_dir: _sass
+
 collections:
   repertoire:
     output: true
+    sort_by: id
   events:
     output: true
 

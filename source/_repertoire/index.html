@@ -1,0 +1,15 @@
+---
+title: Repertoire
+layout: default
+---
+
+<table class="table">
+  <thead><tr><th>Piece</th><th>Composer</th></tr></thead>
+  <tbody>
+    {% for item in site.repertoire %}
+    {% if item.title != "Repertoire" %}
+    <tr><td><a href="{{item.url}}">{{item.title}}</a></td><td>{{item.composer}}</td></tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+</table>
