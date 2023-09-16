@@ -30,22 +30,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  jekyll
 
 # Build settings
-# plugins:
-#  - jekyll-feed
+plugins:
+ - jekyll-feed
 source: source
 timezone: Europe/London
 
-sass:
-  sass_dir: _sass
-
-collections:
-
-  repertoire:
-    output: true
-    sort_by: tag
+future: true
     
-  schedule:
-    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -66,4 +57,9 @@ collections:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  repertoire:
+    output: true
+    sort_by: tag
 
