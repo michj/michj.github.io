@@ -8,7 +8,7 @@ layout: default
   <tbody>
     {% for item in site.repertoire %}
     {% if item.title != "Repertoire" %}
-    <tr><td><a href="{{item.url}}">{{item.title}}</a></td><td>{{item.composer}}</td></tr>
+    <tr><td><a href="{{item.url}}">{{item.title}}</a></td><td>{{item.score.composer}}</td></tr>
     {% endif %}
     {% endfor %}
     </tbody>

@@ -3,11 +3,11 @@ layout: default
 flat:
   appId: 601d9d97547c546e1b25ba94
 ---
-<h1>{{page.title}}</h1>
+<h1 class="text-center">{{page.title}}</h1>
 <div class="container">
   <div class="row">
-    <div class="col text-left"> {{score.lyricist}}</div>
-    <div class="col text-right"> {{score.composer}} <br/> {{score.arranger}} </div>
+    <div class="col"> <i>Lyrics: </i> {{page.score.lyricist}}</div>
+    <div class="col text-end"> <i>Composer: </i> {{page.score.composer}} <br/> <i>Arranger: </i> {{page.score.arranger}} </div>
   </div>
 </div>
 

@@ -42,7 +42,7 @@ collections:
   repertoire:
     output: true
     sort_by: id
-  events:
+  schedule:
     output: true
 
 # Exclude from processing.
