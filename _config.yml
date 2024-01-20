@@ -33,6 +33,7 @@ url: "https://michj.github.io" # the base hostname & protocol for your site, e.g
 #plugins:
 # - jekyll-feed
 source: source
+destination: docs
 timezone: Europe/London
 
 future: true
