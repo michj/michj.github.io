@@ -8,4 +8,10 @@ flat:
 links:
   - text: Full Score PDF
     link: /assets/pdf/there-is-an-isle.pdf
+  - text: Full Score MP3
+    link: /assets/mp3/there-is-an-isle-full.mp3
+  - text: Melody MP3
+    link: /assets/mp3/there-is-an-isle-melody.mp3
+  - text: Piano MP3
+    link: /assets/mp3/there-is-an-isle-piano.mp3
 ---

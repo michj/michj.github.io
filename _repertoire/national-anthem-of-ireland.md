@@ -13,4 +13,10 @@ links:
     link: /assets/pdf/national-anthem-of-ireland.pdf
   - text: Melody Only PDF
     link: /assets/pdf/national-anthem-of-ireland-melody.pdf
+  - text: Full Score MP3
+    link: /assets/mp3/national-anthem-of-ireland-full.mp3
+  - text: Melody MP3
+    link: /assets/mp3/national-anthem-of-ireland-melody.mp3
+  - text: Piano MP3
+    link: /assets/mp3/national-anthem-of-ireland-piano.mp3
 ---
