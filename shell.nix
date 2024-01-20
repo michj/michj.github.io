@@ -1,5 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
-pkgs.mkShell {
-  nativeBuildInputs = [ pkgs.buildPackages.ruby_2_7 ];
-}
+with import <nixpkgs> {};
+ruby.withPackages (ps: with ps; [ bundler jekyll github-pages jekyll-feed])
+
   
