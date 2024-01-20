@@ -6,8 +6,8 @@ flat:
 <h1 class="text-center">{{page.title}}</h1>
 <div class="container">
   <div class="row">
-    <div class="col"> <i>Lyrics: </i> {{page.score.lyricist}}</div>
-    <div class="col text-end"> <i>Composer: </i> {{page.score.composer}} <br/> <i>Arranger: </i> {{page.score.arranger}} </div>
+    <div class="col"> {% if page.score.lyricist %} <i>Lyrics: </i> {{page.score.lyricist}} {% endif %}</div>
+    <div class="col text-end"> {% if page.score.composer %} <i>Composer: </i> {{page.score.composer}} <br/> {% endif %} {% if page.score.arranger %} <i>Arranger: </i> {{page.score.arranger}} {% endif %}</div>
   </div>
 </div>
 
@@ -28,7 +28,7 @@ flat:
   });
 </script>
 {% else %}
-<blockquote>No Online Music Available</blockquote>
+<br/><center><i>No Online Music Available</i></center>
 {% endif %}
 
 <hr/>
