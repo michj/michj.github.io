@@ -12,7 +12,7 @@ layout: default
   <thead><tr><th>Title</th><th>Date & Time</th><th>Location</th></tr></thead>
   <tbody>
     {% for item in site.schedule %}
-    {% if item.title != "Schedule" %}
+    {% if item.title != "Schedule" and item.date >= site.time %}
     <tr><td><a href="{{item.url}}">{{item.title}}</a></td><td>{{item.date | date_to_string}} {{item.time}}</td><td>{{item.location}}</td></tr>
     {% endif %}
     {% endfor %}
