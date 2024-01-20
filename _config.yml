@@ -32,8 +32,7 @@ url: "https://michj.github.io" # the base hostname & protocol for your site, e.g
 # Build settings
 #plugins:
 # - jekyll-feed
-source: source
-destination: docs
+# source: source gh-pages overrides this, so it needs to be in the root directory
 timezone: Europe/London
 
 future: true
