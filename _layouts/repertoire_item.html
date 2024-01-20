@@ -33,37 +33,21 @@ flat:
 
 <hr/>
 
-<h2>Artefacts</h2>
+<h2>Links</h2>
 
-<table class="table table-small table-striped">
-  <thead>
-    <tr><th>Name</th><th>Link</th></tr>
-  </thead>
-  <tbody>
-    {% if page.artefacts.pdf %}
-    <tr><th>Full Score PDF</th><td><a href="/assets/pdf/{{page.tag}}.pdf">PDF</a></td></tr>
-    {% endif %}
-    {% if page.artefacts.mp3_full %}
-    <tr><th>Full Score MP3</th><td><a href="/assets/mp3/{{page.tag}}-full.mp3">MP3</a></td></tr>
-    {% endif %}
-    {% if page.artefacts.mp3_t1 %}
-    <tr><th>Tenor 1 Part MP3</th><td><a href="/assets/mp3/{{page.tag}}-t1.mp3">MP3</a></td></tr>
-    {% endif %}
-    {% if page.artefacts.mp3_t2 %}
-    <tr><th>Tenor 2 Part MP3</th><td><a href="/assets/mp3/{{page.tag}}-t2.mp3">MP3</a></td></tr>
-    {% endif %}
-    {% if page.artefacts.mp3_b1 %}
-    <tr><th>Baritone Part MP3</th><td><a href="/assets/mp3/{{page.tag}}-b1.mp3">MP3</a></td></tr>
-    {% endif %}
-    {% if page.artefacts.mp3_b2 %}
-    <tr><th>Bass Part MP3</th><td><a href="/assets/mp3/{{page.tag}}-b2.mp3">MP3</a></td></tr>
-    {% endif %}
-    {% if page.artefacts.mp3_piano %}
-    <tr><th>Piano Part MP3</th><td><a href="/assets/mp3/{{page.tag}}-piano.mp3">MP3</a></td></tr>
-    {% endif %}
+{% if page.links.size >0 %}
 
-  </tbody>
-</table>
+<ul>
+  {% for item in page.links %}
+  <li><a href="{{item.link}}">{{item.text}}</a></li>
+  {% endfor %}
+</ul>
+
+{% else %}
+
+<center><i>No extra links</i></center>
+
+{% endif %}
 
 {{content}}
 
